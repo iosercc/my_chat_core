@@ -1,0 +1,29 @@
+PODS:
+  - Flutter (1.0.0)
+  - my_chat_core (0.0.1):
+    - Flutter
+    - Reachability
+  - Reachability (3.2)
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - my_chat_core (from `.symlinks/plugins/my_chat_core/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Reachability
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  my_chat_core:
+    :path: ".symlinks/plugins/my_chat_core/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
+  my_chat_core: af9de5d3bfa4c134862bedd9ea3fcee6e64a7be0
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+
+PODFILE CHECKSUM: 8e679eca47255a8ca8067c4c67aab20e64cb974d
+
+COCOAPODS: 1.10.1

@@ -1,0 +1,40 @@
+group 'com.miyu.my_chat_core'
+version '1.0'
+
+buildscript {
+    repositories {
+        maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}//添加
+        maven{url "https://jitpack.io"}//添加
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.0'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        maven{url 'http://maven.aliyun.com/nexus/content/groups/public/'}//添加
+        maven{url "https://jitpack.io"}//添加
+        google()
+        jcenter()
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 16
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+}
